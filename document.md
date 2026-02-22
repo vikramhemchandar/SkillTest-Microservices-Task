@@ -51,7 +51,7 @@ This application provides details on testing various services after running the 
     ```
     curl http://localhost
 
-### Container
+### Docker & Container
 #### File Structure 
 Microsservices/ <br>
 ├── user-service/ <br>
@@ -164,4 +164,5 @@ If the docker image is build and container is running, go to the browser and lau
 
 And go to network tab, to see exact issue
 <img width="2488" height="424" alt="image" src="https://github.com/user-attachments/assets/0f8e1b94-2406-4054-8a02-8fa526925309" /><br>
+
 
