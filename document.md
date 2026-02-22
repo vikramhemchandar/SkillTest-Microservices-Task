@@ -121,11 +121,11 @@ networks:
   microservices-network:
     driver: bridge
 ```
-## Build
-### Docker Images<br>
+## Build and run the containers
+### Docker Images after build<br>
 <img width="1201" height="198" alt="image" src="https://github.com/user-attachments/assets/a76a2a1f-c072-4ab2-889b-d5abddbc108e" />
 
-### Docker running Containers <br>
+### Running Docker Containers <br>
 <img width="1891" height="194" alt="image" src="https://github.com/user-attachments/assets/36821628-37be-4895-b313-d3a4eb1120d8" />
 
 ## Test
@@ -144,4 +144,24 @@ networks:
 <img width="563" height="270" alt="image" src="https://github.com/user-attachments/assets/f2580f52-e2d0-4c44-b79e-46a572797d6c" /><br>
 <img width="561" height="143" alt="image" src="https://github.com/user-attachments/assets/136481b4-0d5c-404a-9c1a-dfbe911c7bb5" /><br>
 <img width="563" height="226" alt="image" src="https://github.com/user-attachments/assets/ff02a8a0-6e22-4bec-ad47-c25e24e450c1" /><br>
+
+## Commands used
+`docker images` -- to see the list of images <br>
+`docker network ls` -- to see the network  <br>
+`docker build -t <image_name>` -- to build an image <br>
+`docker run -d -p <port>:<port> <image_name> .` -- to run the built image on a specific port <br>
+`docker-compose build` -- to build all the images at once using docker compose <br>
+`docker-compose up` -- to run all the containers with built images <br>
+`docker ps` - to list all the running containers <br>
+`docker exec it <container_id> /bin/bash` -- to go into a container <br>
+
+## Basic Troubleshooting
+If a docker image is build and if it is not running, you can check the logs with complete information
+`docker logs <container_id`
+
+If the docker image is build and container is running, go to the browser and launch the URL and right click and inspect
+<img width="563" height="226" alt="image" src="https://github.com/user-attachments/assets/ba74262c-0695-45af-9100-06a3ba5c2228" /><br>
+
+And go to network tab, to see exact issue
+<img width="2488" height="424" alt="image" src="https://github.com/user-attachments/assets/0f8e1b94-2406-4054-8a02-8fa526925309" /><br>
 
