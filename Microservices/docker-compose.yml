@@ -3,38 +3,30 @@ version: "3.9"
 services:
   user-service:
     build: ./user-service
+    image: user-service:v1.0
     ports:
       - "3000:3000"
     depends_on:
       - gateway-service
-    networks:
-      - microservices-network
 
   product-service:
     build: ./product-service
+    image: product-service:v1.0
     ports:
       - "3001:3001"
     depends_on:
       - gateway-service
-    networks:
-      - microservices-network
 
   order-service:
     build: ./order-service
+    image: order-service:v1.0
     ports:
       - "3002:3002"
     depends_on:
       - gateway-service
-    networks:
-      - microservices-network
 
   gateway-service:
     build: ./gateway-service
+    image: gateway-service:v1.0
     ports:
       - "3003:3003"
-    networks:
-      - microservices-network
-
-networks:
-  microservices-network:
-    driver: bridge
