@@ -100,23 +100,29 @@ kubectl port-forward svc/user-service 3000:3000
 *(Please paste your validation screenshots in the placeholders below)*
 
 **Screenshot 1: Cluster Nodes and Pods Running (`kubectl get pods -A`)**
-> Put screenshot here
-![Cluster Status]()
+<img width="637" height="175" alt="image" src="https://github.com/user-attachments/assets/92ccb2d1-6bad-47ce-b4a2-1d8ab72d5221" /><br>
+<img width="676" height="115" alt="image" src="https://github.com/user-attachments/assets/6650ecd3-de8e-46fd-a231-799ccf8f37cb" /><br>
+<img width="627" height="133" alt="image" src="https://github.com/user-attachments/assets/9f63625d-96ca-4ff6-92bd-b17325b9f473" /><br>
 
-<br><br>
 
 **Screenshot 2: Ingress Resource Successfully Created (`kubectl get ingress`)**
-> Put screenshot here
-![Ingress Active]()
+<img width="651" height="85" alt="image" src="https://github.com/user-attachments/assets/b407b90b-6551-48b4-8dbc-8dee4e2100a1" />
+<br>
 
-<br><br>
-
-**Screenshot 3: Successful Browser Check for Users (`http://skilltest/users`)**
-> Put screenshot here
-![Browser Users Endpoint]()
-
-<br><br>
+**Screenshot 3: Successful Browser Check for Users (`http://skilltest/users`)** <br>
+<img width="389" height="237" alt="image" src="https://github.com/user-attachments/assets/d5509846-9d54-485f-82a5-c395c6c372e0" />
+<br>
 
 **Screenshot 4: Successful Browser Check for Products (`http://skilltest/products`)**
-> Put screenshot here
-![Browser Products Endpoint]()
+<img width="436" height="260" alt="image" src="https://github.com/user-attachments/assets/3d0f2c7b-c474-45f2-b6c0-e6463c4e4ceb" />
+<br>
+
+**Screenshot 5: Successful Browser Check for Orders (`http://skilltest/orders`)**
+<img width="412" height="209" alt="image" src="https://github.com/user-attachments/assets/a6a28247-11c7-4e5e-8905-71f5c5e449cd" />
+<br>
+
+**Screenshot 6: Successful Browser Check for gateway (`http://skilltest/gateway`)**
+- users: http://skilltest/gateway/api/users <br>
+<img width="436" height="228" alt="image" src="https://github.com/user-attachments/assets/524f3171-b5e3-4de6-aa03-cd48729e8561" /><br>
+- products - http://skilltest/gateway/api/products <br>
+<img width="472" height="259" alt="image" src="https://github.com/user-attachments/assets/1598c7e0-ad08-4ab3-9070-90d159ffe898" /><br>
